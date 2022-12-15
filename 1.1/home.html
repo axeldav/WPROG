@@ -10,9 +10,14 @@
 <title>home</title>
 </head>
 
-<body>
-    <nav> <!-- nav: Navigation på sidan -->
-
+<body style="background-color:lavenderblush"">
+    <nav>
+        <ul style="box-shadow:10px 10px 5px #888888; ;">
+          <li><a href="history.html"">History</a></li>
+          <li><a href="now.html">Now</a></li>
+          <li><a href="future.html">Future</a></li>
+          <li><a href="home.html">Home</a></li>
+        </ul>
     </nav>
     <main> <!-- Innehållet ska vara unikt på HTML-sidan och inte innehålla saker som upprepas på andra HTML-sidor 
         (sidofält, navigationslänkar, copyright info, webbplatslogotyper, sökformulär, osv). 
@@ -48,21 +53,55 @@
                 och mycket duktig
                     </pre>
                 </p>
+                <figure>
+                    <figcaption>Caption for the GIF</figcaption>
+                    <img src="https://media0.giphy.com/media/W4clSR4BtrjQCHd1IW/giphy.gif?cid=ecf05e47j3am3n1ql5z4hh8ino74uvkpvvds53qcl4hxuyy2&rid=giphy.gif&ct=g" alt="GIF">
+                  </figure>
+                  
                
             </article>
             <article>
-                article 2
+                <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                 Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ol>
+
+
             </article> 
         </section>
         <aside> <!-- aside: Kan finnas innuti eller utanför article (om utanför gäller hela sidan)
                 Ska innehålla relaterad men inte essentiell sidoinformation till huvudinnehållet där det är placerat. -->
-
+            
+            <dl>
+                <dt>Term 1</dt>
+                <dd>Description of term 1</dd>
+                <dt>Term 2</dt>
+                <dd>Description of term 2</dd>
+                <dt>Term 3</dt>
+                <dd>Description of term 3</dd>
+            </dl>
+                
 
         </aside>
     </main>
 
-    <footer> <!-- Ska innehålla information om HTML-sidan eller en article eller section, exempelvis författare, copyright,
-                  kontaktinformation, sitemap, länkar tillbaka till toppen och/eller länkar till relaterade dokument.-->
+    <footer style="background-color: bisque;"> <!-- Ska innehålla information om HTML-sidan eller en article eller section, exempelvis författare, copyright,
+                  kontaktinformation, sitemap, länkar tillbaka till toppen och/eller länkar till relaterade dokument.-->        
+        <p>
+            Contact me at <a href="mailto:axel.davidsson@hotmail.com">my email</a>
+        </p>
+                              
     </footer>
     
 </body>
