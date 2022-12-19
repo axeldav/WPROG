@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+    <style>
+       nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        display: inline-block;
+      }
+      nav li ul {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+      }
+      nav li:hover ul {
+        display: block;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <h1>My Page</h1>
+    </header>
+      <nav>
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li>
+            <a href="#">Section 2</a>
+            <ul>
+              <li><a href="#section2a">Section 2a</a></li>
+              <li><a href="#section2b">Section 2b</a></li>
+              <li><a href="#section2c">Section 2c</a></li>
+            </ul>
+          </li>
+          <li><a href="#section3">Section 3</a></li>
+        </ul>
+      </nav>
+    <section id="section1">
+      <h2>Section 1</h2>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum congue orci, et porttitor purus vestibulum eu. Duis ullamcorper quam in magna accumsan, sit amet posuere justo aliquam. Nam cursus diam vitae metus rutrum, ut pharetra metus semper. Nunc vel velit velit.</p>
+      </article>
+    </section>
+    <section id="section2">
+      <h2>Section 2</h2>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum congue orci, et porttitor purus vestibulum eu. Duis ullamcorper quam in magna accumsan, sit amet posuere justo aliquam. Nam cursus diam vitae metus rutrum, ut pharetra metus semper. Nunc vel velit velit.</p>
+      </article>
+    </section>
+    <section id="section3">
+      <h2>Section 3</h2>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum congue orci, et porttitor purus vestibulum eu. Duis ullamcorper quam in magna accumsan, sit amet posuere justo aliquam. Nam cursus diam vitae metus rutrum, ut pharetra metus semper. Nunc vel velit velit.</p>
+      </article>
+    </section>
+    <aside>
+      <h3>About this page</h3>
+      <p>This page is an example of using the nav, header, footer, aside, section, and article elements in HTML.</p>
+    </aside>
+    <footer>
+      <p>Copyright 2022</p>
+    </footer>
+  </body>
+</html>
