@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Column Layout</title>
+  <style>
+    .column {
+      float: left;
+      width: 50%;
+    }
+    .title {
+      font-weight: bold;
+    }
+    .clearfix {
+      clear: both;
+    }
+    nav {
+        background-color: #ddd;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#types">Types of Trees</a></li>
+      <li><a href="#importance">Importance of Trees</a></li>
+    </ul>
+  </nav>
+  <div class="column">
+    <p class="title">Column 1 Title</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="column">
+    <p class="title">Column 2 Title</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="clearfix"></div>
+</body>
+</html>
