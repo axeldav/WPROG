@@ -35,28 +35,39 @@
                         Ska innehålla introducerande innehåll eller en mängd navigationslänkar. 
                         Innehåller ofta en eller flera rubrikelement (h1-h6), logotyper, ikoner, författarnamn osv.-->
                     
-                    <h2> Välkommen till Min Hemsida</h2>
-                    <h1> Nu börjar vi</h1>
+                    <h2> Welcome to my Webpage</h2>
+                    <h1> a course in making a webapplication</h1>
                 </header>
                 <p> <!-- p: paragraf -->
-                    Här kommer jag att skriva lite grejer. Här får du ett citat som jag gillar,
+                    Im a 30 year old man studying computer science at university.
+                    I have a fascination with technology and science and math. 
+                    One thing i like about computer science is that it can 
+                    combine both <mark>creative</mark> and artistic endeavors with technical ones. 
+                    And there is so many different paths to chose in the computer science world. 
+                    I also see myself as a life long learnern and a bit of a child 
+                    at heart (but im also an old soul so it evens out).
+                    Here is a quote by a Manchester United legend: 
                     <blockquote>
-                        <i>I didnt study, i live </i> <br>
+                        <i>I didnt study, i lived </i> <br>
                         - Eric Cantona
                     </blockquote>
-
-                    Det är viktigt att dricka mycket <mark> mjölk </mark>
                     <pre>
-    Gör man det så blir man 
-        mycket start
-            mycket smart
-                och mycket duktig
+                    As you will find out 
+                        i have lived alot
+                            and i have worked in tough jobs
+                                and now im moving on
                     </pre>
                 </p>
                 <figure>
                     <figcaption>Caption for the GIF</figcaption>
                     <img src="image.jpg" alt="Description of image" width="400" height="300" srcset="image-high-res.jpg 2x, image-low-res.jpg 1x">
                 </figure>
+
+                <audio controls>
+                    <source src="song.mp3" type="audio/mpeg"> <!-- will try this -->
+                    <source src="song.ogg" type="audio/ogg"> <!-- then this -->
+                    Your browser does not support the audio element.
+                  </audio>
                   
                
             </article>
@@ -94,6 +105,55 @@
                 
 
         </aside>
+        <section id="form_section"; style="background-color: violet;" >
+            <fieldset>
+            <legend>Personal information</legend>
+              <form id="form" method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name:" required autofocus><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="please add valid email" placeholder="Enter your email:" required><br>
+                <label for="phone">Phone:</label><br>
+                <input type="phone" id="phone" name="phone" placeholder="Enter your phone number:" required> <br>
+                <label for="url">url:</label><br>
+                <input type="url" id="subject" name="subject"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea><br>
+                <label for="email_pref">Preferred method of contact:</label><br>
+                <input type="radio" id="email_pref" name="contact_pref" value="email" checked> Email
+                <input type="radio" id="phone_pref" name="contact_pref" value="phone"> Phone <br><br>
+                <label for="box">checkbox </label>
+                <input type="checkbox" id="box" name="box" value="yes">
+                <br><br>
+                
+                <label for="file">Upload a file: </label> 
+                <input type="file" name="file" id="file"> <br><br>
+                
+                <label for="priority">Priority:</label><br>
+                <select id="priority" name="priority">
+                  <option value="low">Low</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="high">High</option>
+                </select>
+                <br><br>
+                
+                
+                <label for="mood">how is your mood:</label>
+                <input list="mood" name="mood">
+                    <datalist id="mood">
+                    <option value="happy">
+                    <option value="sad">
+                    <option value="angry">
+                    <option value="confused">
+                    <option value="peaceful">
+                    <option value="vengeful">
+                    </datalist> <br><br>
+                <input type="submit" value="Submit">
+              </form> 
+            </fieldset>
+
+        </section>
+
     </main>
 
     <footer style="background-color: bisque;"> <!-- Ska innehålla information om HTML-sidan eller en article eller section, exempelvis författare, copyright,
