@@ -24,11 +24,19 @@
     </nav>
     <main>
         <section>
-          <img src="./WEBPROG_bilder/IMG_1440_gimp.jpg" alt="Description of image" width="400" height="300" onload="this.src='./WEBPROG_bilder/IMG_1440.JPG'">
+          <picture>
+            <source media="(min-width:650px)" srcset="./WEBPROG_bilder/lagos_beach_progressive_load.jpg">
+            <img src="./WEBPROG_bilder/lagos_beach_progressive_load.jpg" alt="lagos beach" width="100%">
+          </picture>
         </section>
         <section>
           <h2>About Me</h2>
-          <p>Hi, my name is Axel Davidsson and I am a big fan of soccer and playing the piano. 
+          <p>
+            <figure>
+              <img src="./WEBPROG_bilder/painting_head_crop.png" alt="drawing portrait" width="150">
+              <figcaption>drawing of me</figcaption>
+            </figure>
+            Hi, my name is Axel Davidsson and I am a big fan of soccer and playing the piano. 
             I have been playing soccer since I was a kid and have always loved the thrill of the game. 
             I have also been playing the piano for many years and enjoy the challenge of learning new pieces 
             and perfecting my technique. In my spare time, 
